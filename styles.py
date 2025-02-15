@@ -52,6 +52,14 @@ estilos_menu = estilos_general + f'''
 
 estilos_juego = estilos_general + f'''
 
-   
+    QPushButton {{
+        height: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        
+    }}
 
+    QPushButton:disabled{{
+        color: {Color5};
+    }}
 '''    
