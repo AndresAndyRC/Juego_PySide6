@@ -4,7 +4,7 @@ Color3 = "#8EB69B"
 Color4 = "#235347"
 Color5 = "#0B2B26"
 
-estilos_menu = f''' 
+estilos_general = f'''
     QWidget {{
         background-color: {Color1}; 
     }}
@@ -14,6 +14,20 @@ estilos_menu = f'''
         border-radius: 10px;
     }}
 
+    QLabel {{
+        color: {Color5};  /* Color del texto */
+        font-size: 20px;  /* Tamaño de la fuente */
+    }}
+
+    #titulo1 {{
+        font-weight: bold;  /* Texto en negrita */
+        font-size: 40px;  /* Tamaño de la fuente */
+        color: {Color5};  /* Color del texto */
+    }}
+'''
+
+estilos_menu = estilos_general + f''' 
+    
     QLineEdit {{
         background-color: {Color3};  
         border-radius: 5px;
@@ -33,14 +47,11 @@ estilos_menu = f'''
         color: {Color4};  /* Texto del botón */
     }}
 
-    QLabel {{
-        color: {Color5};  /* Color del texto */
-        font-size: 20px;  /* Tamaño de la fuente */
-    }}
 
-    #titulo1 {{
-        font-weight: bold;  /* Texto en negrita */
-        font-size: 40px;  /* Tamaño de la fuente */
-        color: {Color5};  /* Color del texto */
-    }}
 '''
+
+estilos_juego = estilos_general + f'''
+
+   
+
+'''    

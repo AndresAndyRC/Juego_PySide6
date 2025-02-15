@@ -1,4 +1,4 @@
-📌 Proyecto: Juego triqui
+📌 Proyecto: Juego triqui, tutorial tomado de https://www.youtube.com/watch?v=SorvlGS9QXA&list=PLilCyDPBKgoY_DUItk2ov2-HUetLFQR9E&ab_channel=EasyDev
 
 📄 Descripción:
 Este proyecto es una aplicación de escritorio en Python con PySide6 que implementa un triqui como practica de aprender a usar PySide6.
