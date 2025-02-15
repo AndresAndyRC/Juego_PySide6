@@ -1,27 +1,91 @@
-📌 Proyecto: Juego triqui, tutorial tomado de https://www.youtube.com/watch?v=SorvlGS9QXA&list=PLilCyDPBKgoY_DUItk2ov2-HUetLFQR9E&ab_channel=EasyDev
+## 👈 Proyecto: Juego Triqui
 
-📄 Descripción:
-Este proyecto es una aplicación de escritorio en Python con PySide6 que implementa un triqui como practica de aprender a usar PySide6.
+🔗 **Basado en:** [Tutorial de EasyDev](https://www.youtube.com/watch?v=SorvlGS9QXA&list=PLilCyDPBKgoY_DUItk2ov2-HUetLFQR9E)
 
-🐍 Versión de Python:
-- Python 3.13.1
+### 📄 Descripción
+Este proyecto es una aplicación de escritorio en Python con **PySide6** que implementa un juego de **Triqui (Tic-Tac-Toe)**. Es un proyecto de práctica para aprender a utilizar **PySide6** y desarrollar interfaces gráficas en Python.
 
-💻 Requisitos del entorno:
-- pip 23.2.1 (probado con esta versión)
+---
 
-📦 Librerías Utilizadas:
-- PySide6
+## 🐍 Versión de Python  
+- Python **3.13.1** (Probado con esta versión)
 
-⚙️ Instalación:
-1. Asegúrate de tener Python 3.13.1 instalado.
-2. Instala las dependencias con:
-   pip install -r requirements.txt
-3. Ejecuta el programa con:
-   python menu.py
+## 💻 Requisitos del Entorno
+- **pip 23.2.1** (se recomienda esta versión para evitar problemas de compatibilidad)  
+- **Sistema Operativo:** Windows
+- **Dependencias:** Listadas en `requirements.txt`  
 
-🚀 Uso del Proyecto:
-- Al ejecutar `menu.py`, se abrirá una ventana con la interfaz de bienvenida, en la cual veras los secciones para agregar los nombres de los jugadores, una vez llenado los campos pordras dar al boton de jugar.
-[falta informacion]
+---
 
-👨‍💻 Autor: Andres Rodriguez 
-📅 Fecha: 14/02/2025
+## 📦 Librerías Utilizadas
+- **PySide6** → Para la interfaz gráfica  
+
+---
+
+## ⚙️ Instalación y Configuración
+1⃣ **Clonar el repositorio:**  
+```bash
+git clone https://github.com/tu_usuario/tu_repositorio.git
+cd tu_repositorio
+```
+2⃣ **Instalar las dependencias:**  
+```bash
+pip install -r requirements.txt
+```
+3⃣ **Ejecutar el programa:**  
+```bash
+python conexion.py
+```
+---
+
+## 🚀 Uso del Proyecto
+1. **Iniciar el juego:**  
+   - Ejecuta `conexion.py`.  
+   - Aparecerá la pantalla de bienvenida donde puedes ingresar los nombres de los jugadores.  
+
+2. **Interfaz del juego:**  
+   - Se mostrará un tablero 3x3.  
+   - Cada jugador debe hacer clic en una celda para colocar su símbolo (`X` o `O`).  
+
+3. **Finalización de la partida:**  
+   - El juego detectará automáticamente si hay un ganador.
+
+---
+
+## ⚖️ Características y Mejoras Futuras
+
+👌 **Características Actuales:**  
+✔️ Interfaz gráfica con **PySide6**  
+✔️ Posibilidad de ingresar nombres de jugadores  
+✔️ Sistema de turnos automático (`X` y `O`)  
+✔️ Detección de combinaciones ganadoras  
+✔️ Bloqueo de celdas ya seleccionadas    
+
+🚀 **Posibles Mejoras:**  
+🔹 **Modo contra la IA** (agregar un bot que juegue automáticamente)  
+🔹 **Historial de partidas ganadas**  
+🔹 **Interfaz con temas personalizables** (colores y estilos)  
+🔹 **Soporte multijugador en red**  
+
+---
+
+## 📂 Estructura del Proyecto
+```
+📂 Triqui
+🎉── 📄 conexion.py  # Archivo principal que conecta menú y juego  
+🎉── 📄 menu.py      # Interfaz de bienvenida  
+🎉── 📄 game.py      # Lógica y visualización del juego  
+🎉── 📄 styles.py    # Estilos de la interfaz    
+🎉── 📄 requirements.txt  # Dependencias del proyecto  
+🎉── 📂 img/      # Imágenes, iconos y recursos   
+```
+
+---
+
+## 👨‍💻 Autor
+📌 **Nombre:** Andrés Rodríguez  
+📅 **Fecha:** 14/02/2025  
+
+---
+
+⭐ **¡Listo para jugar!** 🎮
