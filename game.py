@@ -111,8 +111,6 @@ class Game(QMainWindow):
             self.o_moves.add(coordinates)
             self.verify_moves()
             self.current_player = "X"    
-        
-        print(coordinates)  # Depuración
 
     def verify_moves(self):
         """
