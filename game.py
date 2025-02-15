@@ -4,6 +4,7 @@ import sys
 # importamos los estilos
 from styles import estilos_juego
 
+
 class Game(QMainWindow):
     current_player = "X"
     x_moves = set()
@@ -41,10 +42,20 @@ class Game(QMainWindow):
 
         self.setStyleSheet(estilos_juego)
 
+    def titulo(self, player1, player2):
+        self.titulo1 = QLabel(f"{player1}  VS {player2}", objectName="titulo1", alignment=Qt.AlignCenter)
+        
+        # Creamos un layout vertical para organizar el título
+        self.layout_titulo = QVBoxLayout()
+        self.layout_titulo.addWidget(self.titulo1)  # Agregamos el título al layout
+        
+        # Asignamos el layout al frame del título
+        self.frame_titulo.setLayout(self.layout_titulo)    
+
     def add_button_to_layout(self, row, column):
         
         coordinates = f'{row},{column}'
-        button = QPushButton(coordinates)
+        button = QPushButton()
         button.clicked.connect(lambda: self.record_move(coordinates, button))
         self.buttons_layout.addWidget(button, row, column)
 
@@ -103,9 +114,3 @@ class Game(QMainWindow):
             if (move.issubset(player_moves)):
                 print(self.current_player, "Ganaste!!")
 
-
-app = QApplication(sys.argv)
-game = Game()
-game.setupUi()
-game.show()
-sys.exit(app.exec())

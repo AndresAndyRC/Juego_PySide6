@@ -66,8 +66,7 @@ class Menu(QMainWindow):
 
         # Creamos el botón para iniciar el juego
         self.btn_jugar = QPushButton("Jugar")
-        # self.btn_jugar.clicked.connect(self.jugar)  # Descomentar si hay una función jugar()
-
+        
         # Creamos un layout vertical para organizar los elementos
         self.layout_input = QVBoxLayout()
 
@@ -85,9 +84,4 @@ class Menu(QMainWindow):
         # Asignamos el layout al frame de inputs
         self.frame_input.setLayout(self.layout_input)
 
-# Configuración y ejecución de la aplicación
-app = QApplication(sys.argv)
-menu = Menu()
-menu.setupUi()
-menu.show()
-sys.exit(app.exec())
+

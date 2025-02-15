@@ -47,7 +47,6 @@ estilos_menu = estilos_general + f'''
         color: {Color4};  /* Texto del botón */
     }}
 
-
 '''
 
 estilos_juego = estilos_general + f'''
