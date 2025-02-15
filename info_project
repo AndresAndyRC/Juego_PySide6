@@ -1,0 +1,27 @@
+📌 Proyecto: Juego triqui
+
+📄 Descripción:
+Este proyecto es una aplicación de escritorio en Python con PySide6 que implementa un triqui como practica de aprender a usar PySide6.
+
+🐍 Versión de Python:
+- Python 3.13.1
+
+💻 Requisitos del entorno:
+- pip 23.2.1 (probado con esta versión)
+
+📦 Librerías Utilizadas:
+- PySide6
+
+⚙️ Instalación:
+1. Asegúrate de tener Python 3.13.1 instalado.
+2. Instala las dependencias con:
+   pip install -r requirements.txt
+3. Ejecuta el programa con:
+   python menu.py
+
+🚀 Uso del Proyecto:
+- Al ejecutar `menu.py`, se abrirá una ventana con la interfaz de bienvenida, en la cual veras los secciones para agregar los nombres de los jugadores, una vez llenado los campos pordras dar al boton de jugar.
+[falta informacion]
+
+👨‍💻 Autor: Andres Rodriguez 
+📅 Fecha: 14/02/2025
